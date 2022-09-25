@@ -1,5 +1,5 @@
 import React from 'react'
-import lef from '../../contents/images/lef.jpg'
+import lef from '../../assets/images/lef.jpg'
 
 function ProductDetails() {
     return (
