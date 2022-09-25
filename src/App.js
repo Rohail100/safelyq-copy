@@ -1,25 +1,17 @@
 import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import Header from './components/layouts/Header';
+import Footer from './components/layouts/Footer';
+import Product from './components/product/Product';
 
 function App() {
   return (
-    <div className="">
-      <header className="">
-        <div class="columns">
-          <div class="column">
-            First column
-          </div>
-          <div class="column">
-            Second column
-          </div>
-          <div class="column">
-            Third column
-          </div>
-          <div class="column">
-            Fourth column
-          </div>
-        </div>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Product />
+      <Footer />
+    </>
+
   );
 }
 
