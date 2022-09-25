@@ -12,7 +12,7 @@ function ProductDetails() {
             </div>
             <div className="pb-3 card-content">
                 <div className="mb-2 content">
-                    <h4 size="4" className="mb-1">Le Frenchy</h4>
+                    <h4 className="mb-1">Le Frenchy</h4>
                     <p className="has-text-grey mb-1">Dallas</p>
                     <a href="/#" className="has-text-black is-flex is-justify-content-space-between">
                         <p className="mb-1">2440 Victory Park Lane</p>

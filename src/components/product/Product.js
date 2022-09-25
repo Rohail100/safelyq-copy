@@ -1,5 +1,8 @@
 import React from 'react'
+import Book from './Book'
+import Offers from './Offers'
 import ProductDetails from './ProductDetails'
+import ProductInfo from './ProductInfo'
 
 function Product() {
     return (
@@ -12,22 +15,7 @@ function Product() {
                                 <ProductDetails />
                             </div>
                             <div className="column is-12">
-                                <div className="card">
-                                    <div className="card-content">
-                                        <div className="content">
-                                            <p>content</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="column is-12">
-                                <div className="card">
-                                    <div className="card-content">
-                                        <div className="content">
-                                            <p>content</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <ProductInfo />
                             </div>
                             <div className="column is-12">
                                 <div className="card">
@@ -43,13 +31,7 @@ function Product() {
                     <div className="column is-6">
                         <div className="columns is-multiline">
                             <div className="column is-12">
-                                <div className="card">
-                                    <div className="card-content">
-                                        <div className="content">
-                                            <p>content</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Offers />
                             </div>
                             <div className="column is-12">
                                 <div className="card">
@@ -61,22 +43,7 @@ function Product() {
                                 </div>
                             </div>
                             <div className="column is-12">
-                                <div className="card">
-                                    <div className="card-content">
-                                        <div className="content">
-                                            <p>content</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="column is-12">
-                                <div className="card">
-                                    <div className="card-content">
-                                        <div className="content">
-                                            <p>content</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Book />
                             </div>
                         </div>
                     </div>
