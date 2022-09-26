@@ -1,9 +1,9 @@
 import React from "react";
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
-import styled from 'styled-components';
 import "swiper/css";
 import 'swiper/css/pagination';
+import { Slide, Gap, Card, IconButton, Portfolio  } from "./StyledComponents";
 
 function Offers() {
   return (
@@ -64,37 +64,5 @@ function Offers() {
     </div>
   );
 }
-
-const Slide = styled.div`
-display: flex;
-height: 160px;
-`
-const Gap = styled.div`
-width: 31.5%;
-margin-right: 0px;
-color: white;
-padding: 0px;
-`
-
-const Card = styled.div`
-width: 35%;
-border: 1px solid rgba(0, 0, 0, 0.07);
-text-align: center;
-padding: 10px 5px;
-`
-
-const Portfolio = styled.div`
-width: 65%;
-background: url(http://res.cloudinary.com/safelyq/image/upload/v1635144319/PRODUCTION/65/1/dkd1vhdhcruh4xpdpceo.png) center center / contain no-repeat rgb(255, 255, 255);
-margin-right: 5px;
-color: white;
-padding: 15px;
-`
-
-const IconButton = styled.button`
-background-color: rgba(66,166,238,.2);
-border: 1px solid rgba(66,166,238,.2)!important;
-height: 20px;
-`
 
 export default Offers;

@@ -1,8 +1,10 @@
 import React from 'react'
 import Book from './Book'
+import Discounts from './Discounts'
 import Offers from './Offers'
 import ProductDetails from './ProductDetails'
 import ProductInfo from './ProductInfo'
+import Reviews from './Reviews'
 
 function Product() {
     return (
@@ -18,13 +20,7 @@ function Product() {
                                 <ProductInfo />
                             </div>
                             <div className="column is-12">
-                                <div className="card">
-                                    <div className="card-content">
-                                        <div className="content">
-                                            <p>content</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Reviews />
                             </div>
                         </div>
                     </div>
@@ -34,13 +30,7 @@ function Product() {
                                 <Offers />
                             </div>
                             <div className="column is-12">
-                                <div className="card">
-                                    <div className="card-content">
-                                        <div className="content">
-                                            <p>content</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Discounts />
                             </div>
                             <div className="column is-12">
                                 <Book />

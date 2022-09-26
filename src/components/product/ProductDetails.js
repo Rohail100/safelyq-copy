@@ -1,7 +1,7 @@
 import React from 'react'
 import lef from '../../assets/images/lef.jpg'
 import StarRatings from 'react-star-ratings';
-import styled from 'styled-components';
+import { Fav } from './StyledComponents';
 
 function ProductDetails() {
     return (
@@ -82,22 +82,5 @@ function ProductDetails() {
         </div>
     )
 }
-
-const Fav = styled.div`
-position: absolute;
-cursor: pointer;
-top: 0px;
-right: 0px;
-background: white;
-width: 35px;
-height: 35px;
-border-radius: 5px;
-display: flex;
--webkit-box-align: center;
-align-items: center;
--webkit-box-pack: center;
-justify-content: center;
-margin: 10px;
-`
 
 export default ProductDetails
