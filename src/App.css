@@ -5,3 +5,7 @@
     padding-bottom: 15px;
     width: 100%;
 }
+.swiper-pagination {
+    position: relative!important;
+    margin-top: 15px;
+}

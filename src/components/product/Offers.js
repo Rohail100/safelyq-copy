@@ -1,16 +1,20 @@
 import React from "react";
+import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from 'styled-components';
 import "swiper/css";
+import 'swiper/css/pagination';
 
 function Offers() {
   return (
     <div className="box">
       <Swiper
+        modules={[Pagination]}
         spaceBetween={50}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        pagination={{ clickable: true }}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <Slide>
@@ -21,16 +25,16 @@ function Offers() {
               <br />
               <small className="has-text-grey-light">Expires: 07/01/2023</small>
               <br />
-              <button className="mt-2 mr-2 button-icon is-active button is-small">
+              <IconButton className="mt-2 mr-2 button-icon is-active button is-small">
                 <span className="icon">
                   <i name="heart-o" className="fa fa-heart-o"></i>
                 </span>
-              </button>
-              <button className="mt-2 button-icon is-active button is-small">
+              </IconButton>
+              <IconButton className="mt-2 button-icon is-active button is-small">
                 <span className="icon">
                   <i name="eye" className="fa fa-eye"></i>
                 </span>
-              </button>
+              </IconButton>
             </Card>
           </Slide>
         </SwiperSlide>
@@ -43,16 +47,16 @@ function Offers() {
               <br />
               <small className="has-text-grey-light">Expires: 04/10/2022</small>
               <br />
-              <button className="mt-2 mr-2 button-icon is-active button is-small">
+              <IconButton className="mt-2 mr-2 button-icon is-active button is-small">
                 <span className="icon">
                   <i name="heart-o" className="fa fa-heart-o"></i>
                 </span>
-              </button>
-              <button className="mt-2 button-icon is-active button is-small">
+              </IconButton>
+              <IconButton className="mt-2 button-icon is-active button is-small">
                 <span className="icon">
                   <i name="eye" className="fa fa-eye"></i>
                 </span>
-              </button>
+              </IconButton>
             </Card>
           </Slide>
         </SwiperSlide>
@@ -85,6 +89,12 @@ background: url(http://res.cloudinary.com/safelyq/image/upload/v1635144319/PRODU
 margin-right: 5px;
 color: white;
 padding: 15px;
+`
+
+const IconButton = styled.button`
+background-color: rgba(66,166,238,.2);
+border: 1px solid rgba(66,166,238,.2)!important;
+height: 20px;
 `
 
 export default Offers;

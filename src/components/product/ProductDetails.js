@@ -1,5 +1,7 @@
 import React from 'react'
 import lef from '../../assets/images/lef.jpg'
+import StarRatings from 'react-star-ratings';
+import styled from 'styled-components';
 
 function ProductDetails() {
     return (
@@ -44,8 +46,58 @@ function ProductDetails() {
                     </p>
                 </aside>
             </div>
+            <footer className="card-footer">
+                <a href="/#" className="card-footer-item">
+                    <div className="mt-1">
+                        <StarRatings
+                            rating={3.6}
+                            starRatedColor="#3273dc"
+                            numberOfStars={5}
+                            name='rating'
+                            starDimension="16px"
+                            starSpacing="2px"
+                        />
+                    </div>
+                    &nbsp;
+                    <small>[6]</small>
+                </a>
+                <Fav className="has-text-info">
+                    <span className="icon has-text-info">
+                        <i name="heart-o" className="fa fa-heart-o"></i>
+                    </span>
+                </Fav>
+                <div className="card-footer-item">
+                    <a className="p-0 card-footer-item" href="/#">
+                        <span className="has-text-info">
+                            <i className="fa fa-envelope"></i>
+                        </span>
+                    </a>
+                    <a className="p-0 card-footer-item" href="/#">
+                        <span className="has-text-info">
+                            <i className="fa fa-comment"></i>
+                        </span>
+                    </a>
+                </div>
+            </footer>
         </div>
     )
 }
+
+const Fav = styled.div`
+position: absolute;
+cursor: pointer;
+top: 0px;
+right: 0px;
+background: white;
+width: 35px;
+height: 35px;
+border-radius: 5px;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+margin: 10px;
+`
 
 export default ProductDetails
