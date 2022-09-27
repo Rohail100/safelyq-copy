@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProductInfo() {
+function BusinessInfo() {
     return (
         <div className="card">
             <div className="card-content message-body">
@@ -16,4 +16,4 @@ function ProductInfo() {
     )
 }
 
-export default ProductInfo
+export default BusinessInfo

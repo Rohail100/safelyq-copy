@@ -3,7 +3,7 @@ import lef from '../../assets/images/lef.jpg'
 import StarRatings from 'react-star-ratings';
 import { Fav } from './StyledComponents';
 
-function ProductDetails() {
+function BusinessDetails() {
     return (
         <div className="card">
             <div className="card-image">
@@ -83,4 +83,4 @@ function ProductDetails() {
     )
 }
 
-export default ProductDetails
+export default BusinessDetails

@@ -9,3 +9,10 @@
     position: relative!important;
     margin-top: 15px;
 }
+.scrollhide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.scrollhide::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
