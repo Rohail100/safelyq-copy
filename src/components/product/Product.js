@@ -4,7 +4,7 @@ import Discounts from './Discounts'
 import Offers from './Offers'
 import ProductDetails from './ProductDetails'
 import ProductInfo from './ProductInfo'
-import Reviews from './Reviews'
+import Reviews from './reviews/Reviews'
 
 function Product() {
     return (
