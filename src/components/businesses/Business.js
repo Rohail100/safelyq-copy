@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import StarRatings from 'react-star-ratings';
+import { Link } from 'react-router-dom';
 
 function Business({ business }) {
     const { name, description, rating, reviews, city, img } = business
@@ -12,7 +13,7 @@ function Business({ business }) {
                         <div className="tile is-ancestor mr-2 mt-1">
                             <div className="tile is-parent px-0 py-1">
                                 <article className="tile is-child box p-1">
-                                    <a href="/#">
+                                    <Link to={"business/1"}>
                                         <div className="columns is-mobile pt-1 px-2">
                                             <div className="column is-6 pr-1">
                                                 <figure className="image is-3by2">
@@ -68,7 +69,7 @@ function Business({ business }) {
                                                 </nav>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </article>
                             </div>
                         </div>
