@@ -2,8 +2,8 @@ import React from 'react'
 import Book from './Book'
 import Discounts from './Discounts'
 import Offers from './Offers'
-import ProductDetails from './BusinessDetails'
-import ProductInfo from './BusinessInfo'
+import BusinessDetails from './BusinessDetails'
+import BusinessInfo from './BusinessInfo'
 import Reviews from './reviews/Reviews'
 import Wrapper from '../layouts/Wrapper'
 
@@ -14,10 +14,10 @@ function Business() {
                 <div className="column is-4">
                     <div className="columns is-multiline">
                         <div className="column is-12">
-                            <ProductDetails />
+                            <BusinessDetails />
                         </div>
                         <div className="column is-12">
-                            <ProductInfo />
+                            <BusinessInfo />
                         </div>
                         <div className="column is-12">
                             <Reviews />

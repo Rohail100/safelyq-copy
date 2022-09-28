@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, Check, Point, ReviewReply } from "../StyledComponents";
+import styled from 'styled-components';
 import StarRatings from 'react-star-ratings';
 
 function Review({review}) {
@@ -66,5 +66,53 @@ function Review({review}) {
   </div>
   )
 }
+
+const Check = styled.div`
+width: 20px;
+height: 20px;
+border-radius: 100%;
+border: 2px solid rgb(255, 255, 255);
+position: absolute;
+right: 0px;
+bottom: 0px;
+background: green;
+color: rgb(255, 255, 255);
+font-size: 10px;
+margin-bottom: -3px;
+margin-right: -7px;
+`
+
+const Avatar = styled.button`
+width: 30px;
+height: 30px;
+border-radius: 100%;
+`
+
+const ReviewReply = styled.div`
+padding: 15px;
+background: rgb(229, 229, 229);
+position: relative;
+margin-top: 15px;
+`
+const Point = styled.div`
+width: 0px;
+height: 0px;
+border-width: 0px 10px 20px;
+border-right-style: solid;
+border-left-style: solid;
+border-right-color: transparent;
+border-left-color: transparent;
+border-image: initial;
+border-top-style: initial;
+border-top-color: initial;
+border-bottom-style: solid;
+border-bottom-color: rgb(229, 229, 229);
+position: absolute;
+margin-top: -13px;
+margin-left: 10px;
+top: 0px;
+left: 0px;
+z-index: 1;
+`
 
 export default Review

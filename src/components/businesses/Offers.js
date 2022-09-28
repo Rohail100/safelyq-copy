@@ -1,9 +1,10 @@
 import React from "react";
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
+import styled from 'styled-components';
 import "swiper/css";
 import 'swiper/css/pagination';
-import { Slide, Gap, Card, IconButton, Portfolio  } from "./StyledComponents";
+import { Slide, Gap, Card, IconButton  } from "./StyledComponents";
 
 function Offers() {
   return (
@@ -64,5 +65,13 @@ function Offers() {
     </div>
   );
 }
+
+const Portfolio = styled.div`
+width: 65%;
+background: url(http://res.cloudinary.com/safelyq/image/upload/v1635144319/PRODUCTION/65/1/dkd1vhdhcruh4xpdpceo.png) center center / contain no-repeat rgb(255, 255, 255);
+margin-right: 5px;
+color: white;
+padding: 15px;
+`
 
 export default Offers;
